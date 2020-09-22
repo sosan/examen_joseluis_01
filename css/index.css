@@ -1,3 +1,341 @@
 /* *********************************** */
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
+
+
+/* VARIABLES */
+:root
+{
+    /* Colores solo para testeo */
+    --color-dev-brown: brown;
+    --color-dev-blue: blue;
+    
+
+
+
+    /* Colores Principales, secundarios */
+    --background-color-default: #E5E5E5;
+    --background-color-primera-capa: #F7F0F7;
+    --background-color-segunda-capa: #FFFFFF;
+
+
+    --background-color-formulario: #FAF5FB;
+    --background-color-parrafo: #FAC8FF;
+    --color-font-black: #000000;
+    --color-font-white: #FFFFFF;
+    --color-precio: #8D3B95;
+    
+
+    --color-icono-atras: #5C5C5C;
+
+
+    /* Fuente */
+    --font-family-default: "Roboto";
+    --font-family-sec: "sans-serif";
+
+    /* Tamaños */
+    --default-size: 16px;
+    --font-size-pequena: 36px;
+    --font-size-mediana: 54px;
+    --font-size-grande: 94px;
+    --font-size-super-grande: 280px;
+
+    --border-radius-mediano: 60px;
+    --border-radius-pequeno: 40px;
+
+
+    --font-weight-default: 400;
+
+}
+
+html
+{
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+
+body
+{
+    background-color: var(--background-color-default);
+    color: var(--color-font-black);
+
+    font-family: var(--font-family-default), var(--font-family-sec) ;
+    font-size: var(--default-size);
+    font-weight: var(--font-weight-default);
+
+}
+
+.contenidoCentrado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* en formato 1 columna */
+.organismo
+{
+
+    background-color: var(--background-color-primera-capa);
+    border-radius: var(--border-radius-mediano);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 931px;
+    margin-top: 88px;
+    margin-bottom: 69px;
+}
+
+
+.zonaBlanca
+{
+    width: 887px;
+    background-color: var(--background-color-segunda-capa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--border-radius-mediano);
+    margin-top: 20px;
+
+
+}
+
+.zonaSuperior
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 30%;
+
+
+    margin-left: 56px;
+    margin-top: 113px;
+}
+
+.iconoColorOscuro
+{
+    
+    fill: var(--color-icono-atras);
+}
+
+.iconoAtras
+{
+    width: 79px;
+    height: 55px;
+   
+}
+
+.textoCentrado
+{
+    /* text-align: center; */
+    justify-self: center;
+    
+    font-size: var(--font-size-grande)
+    
+
+}
+
+.avatar
+{
+    margin-top: 90px;
+    
+
+}
+
+.bordeRedondeado
+{
+    border-radius: 50%;
+}
+
+
+.textoAvatar
+{
+    margin-top: 58px;
+   
+    
+}
+
+.formatoNombre
+{
+    font-size: var(--font-size-mediana);
+
+    font-weight: 700;
+    line-height: 63px;
+}
+
+.formatoEmail
+{
+
+    font-size: var(--font-size-pequena);
+
+    font-weight: 300;
+    line-height: 42px;
+    font-style: italic;
+}
+
+
+.cantidadFormularioPrecio
+{
+    background-color: var(--background-color-formulario);
+    border-radius: var(--border-radius-pequeno);
+
+    width: 776px;
+    height: 139px;
+
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.formulario
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50%;
+}
+
+.grupoBotones
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botones
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 28px;
+    margin-left: 33px;
+}
+
+.precioTexto
+{
+    color: var(--color-precio);
+    font-size: var(--font-size-pequena);
+
+    line-height: 42px;
+    margin-left: 77px;
+    width: 200px;
+
+}
+
+.metodoPago
+{
+    color: var(--color-precio);
+    font-size: var(--font-size-pequena);
+}
+
+
+.resultado
+{
+    margin-top: 91px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.resultadoCifra
+{
+    font-size: var(--font-size-super-grande);
+    
+    /* font-weight: 400; */
+
+}
+
+.resultadoEuro
+{
+    font-size: var(--font-size-grande);
+
+    /* font-weight: 400; */
+    line-height: 109.15px;
+}
+
+
+.nombreProducto
+{
+    font-size: var(--font-size-mediana);
+    font-size: 54px;
+    line-height: 63.28px;
+
+    margin-bottom: 134px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parrafo
+{
+    background-color: var(--background-color-parrafo);
+
+    font-size: var(--font-size-pequena);
+
+    /* font-weight: 400; */
+    line-height: 42px;
+    color: #5C5C5C;
+    text-align: center;
+
+    border-radius: 0px 40px 40px 40px;
+
+    margin-top: 60px;
+    width: 776px;
+    height: 139px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+.botonEnviar
+{
+
+    margin-top: 54px;
+    margin-bottom: 112px;
+
+    width: 776px;
+    height: 139px;
+
+    background-color: #1C1C1F;
+    border-radius: var(--border-radius-pequeno);
+    color: var(--color-font-white);
+
+    font-size: calc(var(--font-size-pequena) + 4px);
+    font-weight: calc( var(--font-weight-default) + 200);
+    line-height: 46px;
+
+    text-align: center;
+}
