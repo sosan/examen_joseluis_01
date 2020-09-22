@@ -53,8 +53,9 @@
 
                 <!-- Formulario donde enviaremos los datos recogidos por el usuario-->
                 <form action="" method="POST">
-                    
+                    <!-- Primera Capa / Cambio de Color -->
                     <ul class="zonaBlanca">
+                        <!-- Segunda Capa / Cambio de color -->
                         <li class="zonaSuperior">
                             <!-- ul no es necesario, solo hay 2 elementos -->
                             <!-- SVG da problemas con el viewbox demasiado grande-->
@@ -65,26 +66,42 @@
                                 <img src="./img/smartphone/atras.png" alt="Icono Atras" class="iconoAtras">
                             </a>
                             <span class="textoCentrado">Pagar</span>
+                            <!-- ¿¿ No se que es mejor span o h2 en este caso??-->
                             <!-- <h2 class="textoCentrado">Pagar</h2> -->
                             
     
                         </li>
+                        <!-- Imagen Avatar del usuario -->
                         <li class="avatar">
                             <img src="./img/smartphone/avatar.jpg" alt="Icono Avatar" class="bordeRedondeado">
                         </li>
+                        <!-- Texto Descripcion del usuario -->
                         <li class="textoAvatar">
                             <!-- no hace falta hacer un ul, solo hay 2 elementos -->
                             <h2 class="formatoNombre">Juana Delgado</h2>
                             <h2 class="formatoEmail">juanadelg@gmail.com</h2>
     
                         </li>
+
+                        <!-- ¿¿¿¿ Formulario que no entiendo demasiado bien como funciona.
+                            Los botones aumentan la cantidad de dinero, cambian el metodo de pago,
+                            la cantidad se puede modificar??
+                            En este caso colocado como un input al precio para que se pueda cambiar
+                            Tambien dentro hay un formulario, quizas se pueda cambiar por un a href="" en 
+                            vez de un form.
+                            ???-->
                         <li class="cantidadFormularioPrecio">
     
                             <!-- Formulario donde enviaremos a un backend los cambios que ha hecho el usuario -->
                             <form action="./url_cambio_metodo_pago" method="POST" class="formulario">
                                 <input type="number" name="precio" value="922.28" class="precioTexto">
+                                <!-- PAra poder colocarlos uno arriba del otro, hemos colocado un forma fila y luego en forma columna-->
+                                <!-- ALINEADO EN FORMA FILA -->
                                 <section class="grupoBotones">
+                                    <!-- ¿¿¿¿¿¿¿¿Es mejor un span o un h3 ?????-->
                                     <span class="metodoPago">Paypal</span>
+                                    
+                                    <!-- ALINEADO EN FORMA COLUMNA -->
                                     <section class="botones">
                                         <button type="submit">
                                             <!-- Boton donde aumentamos la cantidad de dinero -->
@@ -100,16 +117,17 @@
                                             </svg>
 
                                         </button>
-        
-
                                     </section>
+
                                 </section>
                             </form>
                         </li>
+                        <!-- Muestra cantidad / valor -->
                         <li class="resultado">
                             <span class="resultadoCifra">29.8</span>
                             <sup class="resultadoEuro">€</sup>
                         </li>
+                        <!-- Descripcion del objeto -->
                         <li >
                             <h3 class="nombreProducto">Bolso de mano</h3>
     

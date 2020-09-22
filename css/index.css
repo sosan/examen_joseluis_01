@@ -39,9 +39,12 @@
     --font-size-mediana: 54px;
     --font-size-grande: 94px;
     --font-size-super-grande: 280px;
+    
 
+    /* Weight  */
+    --font-weight-default: 400;
+    
     /* Tamaño Bordes */
-
     --border-radius-mediano: 60px;
     --border-radius-pequeno: 40px;
 
@@ -63,7 +66,12 @@
     --margin-left-77-to-beyond: 77px;
 
 
-    --font-weight-default: 400;
+    /* Anchura */
+    --anchura-organismo: 931px;
+    --anchura-primera-capa: 887px;
+    --anchura-formulario: 776px;
+    --anchura-precio-texto: 200px;
+
 
 }
 
@@ -104,16 +112,16 @@ body
     align-items: center;
     justify-content: center;
     
-    width: 931px;
+    width: var(--anchura-organismo);
     margin-top: var(--margin-top-6);
-    /* margin-top: 88px; */
     margin-bottom: 69px;
 }
 
 
 .zonaBlanca
 {
-    width: 887px;
+
+    width: var(--anchura-primera-capa);
     background-color: var(--background-color-segunda-capa);
     display: flex;
     flex-direction: column;
@@ -122,7 +130,6 @@ body
 
     border-radius: var(--border-radius-mediano);
     margin-top: var(--margin-top-1);
-    /* margin-top: 20px; */
 
 
 }
@@ -136,11 +143,7 @@ body
     width: 100%;
     gap: 26%;
     text-align: center;
-
-
-    /* margin-left: var(--margin-left-56-to-77); */
     margin-top: var(--margin-top-9);
-    /* margin-top: 113px; */
 }
 
 .iconoColorOscuro
@@ -154,14 +157,12 @@ body
 {
     width: 79px;
     height: 55px;
-   
 }
 
 .textoCentrado
 {
-    /* text-align: center; */
+    text-align: center;
     justify-self: center;
-    
     font-size: var(--font-size-grande)
     
 
@@ -169,9 +170,7 @@ body
 
 .avatar
 {
-    /* margin-top: 90px; */
     margin-top: var(--margin-top-7);
-    
 
 }
 
@@ -184,17 +183,13 @@ body
 .textoAvatar
 {
     margin-top: var(--margin-top-4);
-    /* margin-top: 58px; */
-   
     
 }
 
 .formatoNombre
 {
     font-size: var(--font-size-mediana);
-
     font-weight: 700;
-    /* line-height: 63px; */
 }
 
 .formatoEmail
@@ -213,10 +208,9 @@ body
     background-color: var(--background-color-formulario);
     border-radius: var(--border-radius-pequeno);
 
-    width: 776px;
+    width: var(--anchura-formulario);
     height: 139px;
 
-    /* margin-top: 32px; */
     margin-top: var(--margin-top-2);
     display: flex;
     flex-direction: row;
@@ -260,9 +254,10 @@ body
     color: var(--color-precio);
     font-size: var(--font-size-pequena);
 
-    /* line-height: 42px; */
     margin-left: var(--margin-left-77-to-beyond);
-    width: 200px;
+    width: var(--anchura-precio-texto);
+    
+
 
 }
 
@@ -276,7 +271,6 @@ body
 .resultado
 {
     margin-top: var(--margin-top-8);
-    /* margin-top: 91px; */
 
     display: flex;
     flex-direction: row;
@@ -288,26 +282,18 @@ body
 .resultadoCifra
 {
     font-size: var(--font-size-super-grande);
-    
-    /* font-weight: 400; */
 
 }
 
 .resultadoEuro
 {
     font-size: var(--font-size-grande);
-
-    /* font-weight: 400; */
-    line-height: 109.15px;
 }
 
 
 .nombreProducto
 {
     font-size: var(--font-size-mediana);
-    font-size: 54px;
-    line-height: 63.28px;
-
     margin-bottom: 134px;
 }
 
