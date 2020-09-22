@@ -141,7 +141,7 @@ body
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 26%;
+    gap: 22%;
     text-align: center;
     margin-top: var(--margin-top-9);
 }
